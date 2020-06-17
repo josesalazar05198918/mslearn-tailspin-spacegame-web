@@ -5,6 +5,7 @@ pool:
   name: 'MyAgentPool'
   demands:
     - npm
+    - nvm
 
 variables:
   buildConfiguration: 'Release'
