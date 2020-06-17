@@ -17,6 +17,9 @@ steps:
   inputs:
     version: '$(dotnetSdkVersion)'
 
+- script: 'nvm use v12.18.0'
+  displayName: 'Use Node LTS'
+
 - task: Npm@1
   displayName: 'Run npm install tasks'
   inputs:
